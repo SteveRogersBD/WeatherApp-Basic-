@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#71C5EC"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/bg"
+        android:id="@+id/bg_image"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather App"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textSize="52sp"
+        android:textFontWeight="500"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="204dp"
+        android:layout_height="77dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:background="#CE6BDF"
+        android:hint="Enter Longitude"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:id="@+id/longitude"
+        />
+    <EditText
+        android:layout_width="204dp"
+        android:layout_height="77dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
+        android:background="#CE6BDF"
+        android:hint="Enter Latitude"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:id="@+id/latitude"
+        />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="290dp"
+        android:text="Search"
+        android:textSize="20sp"
+        android:background="#7A57BA"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weather"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="weather details"
+        android:textSize="30dp"
+        android:textFontWeight="500"
+        android:textStyle="bold"
+        android:background="#CE6BDF"
+        android:textColor="@color/white"
+        />
+
+</RelativeLayout>
